@@ -50,11 +50,11 @@ const Popular = () => {
                       <div className='text row'>
                         <h1 className='title'>{val.title.slice(0, 40)}...</h1>
                         <div className='date'>
-                          <FaCalendarAlt />{" "}
+                          <FaCalendarAlt className="icon" />{" "}
                           <label>{val.date}</label>
                         </div>
                         <div className='comment'>
-                          <FaComments />{" "}
+                          <FaComments className="icon" />{" "}
                           <label>{val.comments}</label>
                         </div>
                       </div>

@@ -8,6 +8,7 @@ const Discover = () => {
         <section className='discover'>
         <div className='container'>
           <Heading title='Discover' />
+          </div>
           <div className='content'>
             {discover.map((val) => {
               return (
@@ -20,7 +21,6 @@ const Discover = () => {
               )
             })}
           </div>
-        </div>
       </section>
     </>
   )

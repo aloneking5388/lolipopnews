@@ -117,7 +117,7 @@ a {
   cursor: pointer;
 }
 .head .logo img {
-  width: 600px;
+  width: 500px;
 }
 header {
   background-color: #000;
@@ -144,14 +144,14 @@ header a {
 @media screen and (max-width: 768px) {
 
   .head .logo img{
-    width: 450px;
+    width: 370px;
   }
 
   .head .ad {
     display: none;
   }
   header .icon {
-    display: none;
+    display: flex;
   }
   header .flex {
     display: none;
@@ -167,7 +167,7 @@ header a {
     top: 21%;
     transition: 0.5s;
     width: 100%;
-    height: 45vh;
+    height: 70vh;
     z-index: 5;
     padding: 50px;
   }
@@ -257,6 +257,9 @@ header a {
   background-color: #c78823;
 }
 @media screen and (max-width: 768px) {
+  .hero .box:nth-child(1) h1 {
+    font-size: 17px;
+  }
   .hero .container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -316,7 +319,7 @@ main .container {
 
 .heading {
   margin: 30px 0;
-  background-image: url("../public/images/title_pattern.png");
+  background-image: url("/images/title_pattern.png");
   height: 35px;
   background-position: center;
 }
@@ -487,6 +490,18 @@ main .container {
   padding: 20px;
 }
 
+.popular .icon{
+  color: #ff3848;
+}
+
+.popularPost .icon {
+  color: #ff3848;
+}
+
+.music .icon {
+  color: #ff3848;
+}
+
 .music .box {
   margin-bottom: 30px;
   margin-left: 2px;
@@ -509,19 +524,26 @@ main .container {
 @media screen and (max-width: 768px) {
   .music img,
   .music .images {
-    height: 350px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
   }
 
   .music h1 {
     font-size: 16px;
   }
+
+  .music p {
+    font-size: 9px;
+  }
 }
 
 .discover .content {
+  padding-left: 10px;
+  padding-right: 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 30px;
+  grid-gap: 25px;
 }
 
 .discover .box {
@@ -530,10 +552,10 @@ main .container {
 }
 .discover .img {
   width: 150px;
-  height: 100px;
+  height: 50px;
 }
 .discover img {
-  width: 150px;
+  width: 200px;
   height: 100px;
   object-fit: cover;
 }
@@ -542,10 +564,21 @@ main .container {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  color: #ffff;
 }
 @media screen and (max-width: 768px) {
   .discover .content {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 22px;
+  }
+
+  .discover .content {
+    margin: 30px;
+  }
+
+  .discover img {
+    width: 200px;
+    height: 100px;
   }
 }
 
@@ -565,7 +598,7 @@ footer .logo p {
 }
 footer h3 {
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 footer .item {
   display: flex;
@@ -610,8 +643,20 @@ footer ul li span::before {
   footer .container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  footer .logo {
+    width: 150px;
+  }
+
+  footer .logo p {
+    font-size: 15px;
+  }
   .legal {
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  footer .item p {
+    font-size: x-small;
   }
 }
 

@@ -31,7 +31,7 @@ const Music = () => {
                     <div className='box shadow flexSB'>
                       <div className='images'>
                         <div className='img'>
-                          <img src={val.cover} alt='' />
+                          <img src={val.cover} alt={val.title} />
                         </div>
                         <div class='category category1'>
                           <span>{val.catgeory}</span>
@@ -40,14 +40,14 @@ const Music = () => {
                       <div className='text'>
                         <h1 className='title'>{val.title.slice(0, 40)}...</h1>
                         <div className='date'>
-                          <FaCalendarAlt />{" "}
+                          <FaCalendarAlt className="icon" />{" "}
                           <label>{val.date}</label>
                         </div>
                         <p className='desc'>{val.desc.slice(0, 250)}...</p>
                         <div className='comment'>
-                          <FaShare />{" "}
+                          <FaShare className="icon" />{" "}
                           <label>Share / </label>
-                          <FaComments />{" "}
+                          <FaComments className="icon" />{" "}
                           <label>{val.comments}</label>
                         </div>
                       </div>

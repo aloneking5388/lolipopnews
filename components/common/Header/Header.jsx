@@ -46,7 +46,7 @@ const header = () => {
               </li>
             </ul>
             <button className='barIcon' onClick={() => setNavbar(!navbar)}>
-              {navbar ? <FaTimes /> : <FaBars />}
+              {navbar ? <FaTimes /> : <FaBars className='icon' />}
             </button>
           </nav>
         </div>
