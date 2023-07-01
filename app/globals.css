@@ -144,7 +144,7 @@ header a {
 @media screen and (max-width: 768px) {
 
   .head .logo img{
-    width: 370px;
+    width: 300px;
   }
 
   .head .ad {
@@ -551,8 +551,8 @@ main .container {
   box-shadow: 0 4px 8px rgb(0 0 0 / 4%), 0 0 2px rgb(0 0 0 / 6%), 0 0 1px rgb(0 0 0 / 4%);
 }
 .discover .img {
-  width: 150px;
-  height: 50px;
+  width: 200px;
+  height: 100px;
 }
 .discover img {
   width: 200px;
@@ -564,22 +564,47 @@ main .container {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  color: #ffff;
 }
 @media screen and (max-width: 768px) {
   .discover .content {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 22px;
+    grid-gap: 8px;
   }
 
-  .discover .content {
-    margin: 30px;
+  .discover h1 {
+    color: #ffff;
+  }
+
+  .discover .img {
+    width: 200px;
+    height: 50px;
   }
 
   .discover img {
-    width: 200px;
+    object-fit: cover;
+    width: 227px;
     height: 100px;
   }
+}
+
+@media screen and (max-width: 440px) {
+  .discover .content {
+    margin: 0 15px 0 15px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px
+  }
+
+  .discover h1 {
+    color: #ffff;
+  }
+
+  .discover img {
+    width: 325px;
+    height: 100px;
+  }
+
+  
+
 }
 
 footer {
@@ -644,19 +669,25 @@ footer ul li span::before {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  footer .logo {
-    width: 150px;
-  }
-
   footer .logo p {
-    font-size: 15px;
+    font-size: 12px;
+  } 
+
+  footer .box span {
+      font-size: 15px;
   }
   .legal {
     font-size: 10px;
   }
 
   footer .item p {
-    font-size: x-small;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
